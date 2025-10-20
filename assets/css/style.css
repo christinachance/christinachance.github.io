@@ -805,3 +805,36 @@ p span {
   }
 }
 
+
+
+.ta-experience {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 1em 0;
+}
+
+.ta-experience li {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+.ta-experience strong {
+  color: #5B2C6F; /* purple-ish */
+  display: block;
+}
+
+.ta-experience em {
+  color: #6C3483; /* darker purple */
+}
+
+.ta-experience a {
+  color: #7B3FBF;   /* your purple links */
+  text-decoration: none;
+}
+
+.ta-experience a:hover {
+  color: #9C63D6;   /* lighter purple on hover */
+  border-bottom: 1px dotted #000;
+}
+
+
