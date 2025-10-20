@@ -77,7 +77,7 @@ h1 {
 /**
  *  * Links
  *   */
-a {
+/* a {
   color: #1C91CD !important;
   text-decoration: none; }
   a:visited {
@@ -101,7 +101,34 @@ a {
     a.post-title-link:hover {
       border-bottom: 1px dotted black !important; }
     a.post-title-link:visited {
-      color: "crimson" !important; }
+      color: "crimson" !important; } */
+
+a {
+  color: purple !important;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple !important;
+}
+
+a:hover {
+  color: rebeccapurple !important;
+  border-bottom: 1px dotted black;
+}
+
+a.page-link,
+a.page-link:visited,
+a.page-link:hover,
+a.postLink,
+a.postLink:visited,
+a.postLink:hover,
+a.post-title-link,
+a.post-title-link:visited,
+a.post-title-link:hover {
+  color: purple !important;
+  border-bottom: 1px dotted black;
+}
 
 /**
  *  * Blockquotes
