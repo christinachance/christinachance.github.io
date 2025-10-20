@@ -825,12 +825,12 @@ p span {
 }
 
 /* Remove all colors, keep only hover underline if desired */
-.ta-experience a {
+/* .ta-experience a {
   text-decoration: none;
 }
 
 .ta-experience a:hover {
   border-bottom: 1px dotted #000;
-}
+} */
 
 
