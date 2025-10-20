@@ -818,19 +818,19 @@ p span {
   line-height: 1.6;
 }
 
-.ta-experience strong {
+/* .ta-experience strong {
   color: #5B2C6F; /* purple-ish */
-  display: block;
+  /* display: block;
 }
 
 .ta-experience em {
   color: #6C3483; /* darker purple */
-}
+/* }
 
 .ta-experience a {
   color: #7B3FBF;   /* your purple links */
-  text-decoration: none;
-}
+  /* text-decoration: none;
+} */ 
 
 .ta-experience a:hover {
   color: #9C63D6;   /* lighter purple on hover */
