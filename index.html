@@ -1,116 +1,197 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Christina Chance</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-  <meta name="description" content="">
-  <link href="//fonts.googleapis.com/css?family=Raleway:100,400,300,600" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* --- General Layout --- */
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* --- Fixed Navigation --- */
+    .header-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .header-name {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    .header-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .header-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Content Area --- */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 120px; /* space for fixed nav */
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .profile-section {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .headshot-wrapper img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .profile-section h1 {
+      margin: 10px 0 5px 0;
+    }
+
+    .bio-section {
+      flex: 2 1 500px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* --- Footer / Acknowledgement --- */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bio-section {
+        width: 100%;
+        text-align: left;
+      }
+
+      .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 
-
-  <body>
+<body>
   <div class="wrapper">
-<div class="float-container" style="margin-top:40px;">
-	<div class="buttons">
-	<div class="header-top">
-	  <div class="header-name">
-	    <p style="font-size:150%;"><b>Christina Chance</b></p>
-	  </div>
-	  <div class="header-nav">
-	    <ul>
-	      <li><a href="index.html"><b>About</b></a></li>
-	      <li><a href="research.html"><b>Research</b></a></li>
-	      <li><a href="teaching.html"><b>Teaching</b></a></li>
-	    </ul>
-	  </div>
-	</div>
-	</div>
-	<br>
-  <div class="float-child-left" style="text-align:center;">
-    <!-- For circle:  -->
-    <!-- <img alt="image" style="width:180px;margin-bottom:20px;margin-right:20px;border-radius:100px;" src="assets/images/headshot.jpeg"> -->
-    <!-- For square:  -->
-<!--     <img alt="image" style="width:350px;margin-bottom:15px;border-radius:50%;" src="assets/images/headshot25.jpg">
-	  <img alt="image" style="max-width:100%; height:auto; border-radius:50%; margin-bottom:15px;" src="assets/images/headshot25.jpg"> -->
 
-
-	  
-<!--  <img alt="image" style="max-width:100%; height:auto; border-radius:50%; margin-bottom:15px;" src="assets/images/headshot25.jpg"> -->
-     <div class="headshot-wrapper">
-	  <img src="assets/images/headshot25_2.jpeg" alt="Christina Chance">
-	</div>
-    <h1>Christina Chance</h1>
-    <p>cchance [at] cs.ucla.edu</p>
-    <p>
-	<!-- <a href="https://github.com/christinachance/" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://www.linkedin.com/in/miley-sinantha-hu-721214133/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://twitter.com/christinachanc" target="_blank" rel="noopener noreferrer">Twitter</a> | <a href="/assets/documents/Christina_Chance_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> -->
-    	<a href="https://github.com/christinachance/" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://www.linkedin.com/in/christina-chance-147666166/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=btfwlCAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> | <a href="/assets/documents/Christina_Chance_CV.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
-    </p>
-    <!--<p><a href="/assets/documents/rebecca_CV_technical_2024.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>-->
-  </div>
-  <div class="float-child-right">
-  	<div>
-	<p>Hello, I’m Christina!</p>
-      <p>I am a fourth-year PhD candidate in Computer Science at the University of California, Los Angeles advised by <a href="http://web.cs.ucla.edu/~kwchang/" target="_blank" rel="noopener noreferrer">Kai-Wei Chang</a>. 
-      I am supported by the <a href="https://grad.ucla.edu/funding/financial-aid/funding-for-entering-students/eugene-v-cota-robles-fellowship/" target="_blank" rel="noopener noreferrer">Eugene V. Cota-Robles Fellowship</a> and the <a href="https://www.gemfellowship.org/">GEM Fellowship Program</a>. 
-      My research focuses on (1) the application of NLP methodologies for bias mitigation and quantification in social science, (2) the study of dialectical biases in existing machine learning systems, and (3) the assessment and development of community grounded content moderation approaches. This culminates under the goal of engaging with, studying, assessing, and critiquing socio-technical systems that people engage with in their everyday lives as well as developing more inclusive and equitable systems.</p>      
-		<p>Beyond this work, I love doing community service and watching anime!</p>
-  	</div>
-
-</div>
-</div>
-<!-- <div style="flex:1; padding:20px; text-align:center; border-right:1px solid #ccc;">
-  <h2>Education</h2>
-
-  <div style="margin-bottom:20px;">
-    <h3>Ph.D. in Computer Science</h3>
-    <p>Eugene V. Cota-Robles Fellow, GEM Fellow</p>
-    <p>Sept. 2022 – Present</p>
-    <p><i>University of California, Los Angeles</i></p>
-  </div>
-
-  <div style="margin-bottom:20px;">
-    <h3>M.S. in Computer Science</h3>
-    <p>Sept. 2022 – June 2025</p>
-    <p><i>University of California, Los Angeles</i></p>
-  </div>
-
-  <div style="margin-bottom:20px;">
-    <h3>B.S. in Computer Science, Magna Cum Laude</h3>
-    <p>Aug. 2018 – May 2022</p>
-    <p><i>Emory University</i></p>
-  </div>
-</div>
-
-<!-- Right Section -->
-<!-- <div style="flex:1; padding:20px; text-align:center;">
-  <h2>Work Experience</h2>
-  <div>
-    <h3>Adobe Inc. – Research Intern</h3>
-    <p>June 2025 – September 2025</p>
-  </div>
-</div> --> 
-
-
-<br>
-<div>
-	<p><i>Acknowledgement: This website uses the design and template from <a href="https://rpattichis.github.io/index.html" target="_blank" rel="noopener noreferrer">Rebecca Pattichis</a>,  <a href="https://cs.stanford.edu/~ssagawa/" target="_blank" rel="noopener noreferrer">Shiori Sagawa</a>, and <a href="https://amitakamath.github.io/" target="_blank" rel="noopener noreferrer">Amita Kamath</a>.</i></p>
-</div>
-
-<br>
-
+    <div class="header-top">
+      <div class="header-name">Christina Chance</div>
+      <div class="header-nav">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+        </ul>
       </div>
     </div>
 
+    <div class="content">
+      <div class="profile-section">
+        <div class="headshot-wrapper">
+          <img src="assets/images/headshot25_2.jpeg" alt="Christina Chance">
+        </div>
+        <h1>Christina Chance</h1>
+        <p>cchance [at] cs.ucla.edu</p>
+        <p>
+          <a href="https://github.com/christinachance/" target="_blank">Github</a> |
+          <a href="https://www.linkedin.com/in/christina-chance-147666166/" target="_blank">LinkedIn</a> |
+          <a href="https://scholar.google.com/citations?user=btfwlCAAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+          <a href="/assets/documents/Christina_Chance_CV.pdf" target="_blank">Curriculum Vitae</a>
+        </p>
+      </div>
 
-  </body>
+      <div class="bio-section">
+        <p>Hello, I’m Christina!</p>
+        <p>
+          I am a fourth-year PhD candidate in Computer Science at the University of California, Los Angeles advised by
+          <a href="http://web.cs.ucla.edu/~kwchang/" target="_blank" rel="noopener noreferrer">Kai-Wei Chang</a>.
+          I am supported by the
+          <a href="https://grad.ucla.edu/funding/financial-aid/funding-for-entering-students/eugene-v-cota-robles-fellowship/" target="_blank">Eugene V. Cota-Robles Fellowship</a>
+          and the <a href="https://www.gemfellowship.org/" target="_blank">GEM Fellowship Program</a>.
+        </p>
+        <p>
+          My research focuses on (1) the application of NLP methodologies for bias mitigation and quantification in
+          social science, (2) the study of dialectical biases in existing machine learning systems, and (3) the
+          assessment and development of community grounded content moderation approaches. This culminates under the goal
+          of engaging with, studying, assessing, and critiquing socio-technical systems that people engage with in their
+          everyday lives as well as developing more inclusive and equitable systems.
+        </p>
+        <p>Beyond this work, I love doing community service and watching anime!</p>
+      </div>
+    </div>
 
+    <footer>
+      <p>
+        <i>
+          Acknowledgement: This website uses the design and template from
+          <a href="https://rpattichis.github.io/index.html" target="_blank">Rebecca Pattichis</a>,
+          <a href="https://cs.stanford.edu/~ssagawa/" target="_blank">Shiori Sagawa</a>, and
+          <a href="https://amitakamath.github.io/" target="_blank">Amita Kamath</a>.
+        </i>
+      </p>
+    </footer>
+
+  </div>
+</body>
 </html>
