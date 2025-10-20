@@ -714,7 +714,7 @@ p span {
 }
 
 .headshot-wrapper {
-  max-width: 200px;
+  max-width: 250px; /* was 200px */
   margin: 0 auto 15px auto;
 }
 
@@ -732,7 +732,7 @@ p span {
 }
 
 .headshot-wrapper {
-  max-width: 200px;
+  max-width: 250px;
   flex-shrink: 0;
 }
 
