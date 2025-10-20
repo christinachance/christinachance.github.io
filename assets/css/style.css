@@ -818,22 +818,18 @@ p span {
   line-height: 1.6;
 }
 
-/* .ta-experience strong {
-  color: #5B2C6F; /* purple-ish */
-  /* display: block;
+/* Keep strong and em inline, no extra styling */
+.ta-experience strong,
+.ta-experience em {
+  font-weight: bold; /* em can also keep italic formatting */
 }
 
-.ta-experience em {
-  color: #6C3483; /* darker purple */
-/* }
-
+/* Remove all colors, keep only hover underline if desired */
 .ta-experience a {
-  color: #7B3FBF;   /* your purple links */
-  /* text-decoration: none;
-} */ 
+  text-decoration: none;
+}
 
 .ta-experience a:hover {
-  color: #9C63D6;   /* lighter purple on hover */
   border-bottom: 1px dotted #000;
 }
 
