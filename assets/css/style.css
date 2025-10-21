@@ -851,3 +851,20 @@ h2 {
   line-height: 1.6;
   display: block;
 } 
+
+
+/* Force numbers for research interests list, override global ol rules */
+ol.research-interests {
+  list-style: decimal;       /* use numbers */
+  padding-left: 1.8em;       /* spacing between number and text */
+  margin-left: auto;
+  margin-right: auto;         /* center the list block horizontally */
+  text-align: left;           /* left-align text relative to numbers */
+}
+
+ol.research-interests li {
+  display: list-item !important;  /* ensure numbers render */
+  float: none !important;         /* override global float */
+  margin-bottom: 0.8em;           /* spacing between items */
+  line-height: 1.6;
+}
