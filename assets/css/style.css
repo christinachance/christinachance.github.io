@@ -849,3 +849,15 @@ h2 {
 } */
 
 
+.ta-experience li,
+.tutoring li,
+.teaching-assistantship li {
+  display: list-item !important;
+  float: none !important;
+  padding: 0 !important;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
