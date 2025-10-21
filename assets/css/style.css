@@ -807,77 +807,38 @@ p span {
 
 
 
-/* Ensure lists display normally and clear floats */
+/* --- Teaching & Tutoring List Formatting --- */
+
+/* General structure for both sections */
 .ta-experience,
 .tutoring ul {
-  list-style-type: disc;
-  margin: 0 0 1.2em 1.5em; /* give reasonable left indent and bottom spacing */
-  padding: 0;
+  list-style: none;        /* no bullets */
+  margin: 0;               /* remove extra margins */
+  padding: 0;              /* remove left padding */
 }
 
-/* Force list items to be normal list items (not inline/floated) */
+/* List item layout */
 .ta-experience li,
-.tutoring ul li {
-  display: block !important;
-  float: none !important;
-  clear: none !important;
-  margin-bottom: 0.9em;
-  line-height: 1.5;
-}
-
-/* Make sure section headings sit on their own line and have space */
-h2 {
-  display: block;
-  margin-top: 1.5em;
-  margin-bottom: 0.6em;
-}
-
-/* Clear any floats that might be lingering inside the section */
-.section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Remove all colors, keep only hover underline if desired */
-/* .ta-experience a {
-  text-decoration: none;
-}
-
-.ta-experience a:hover {
-  border-bottom: 1px dotted #000;
-} */
-
-
-.ta-experience li,
-.tutoring li,
-.teaching-assistantship li {
-  display: block !important;
-  float: none !important;
-  padding: 0 !important;
-  margin-bottom: 1em;
-  line-height: 1.5;
-  text-align: left;
-}
-
-
-.ta-experience {
-  list-style: none; /* removes bullet points */
-  margin: 0;
-  padding: 0;
-}
-
-.ta-experience li {
-  display: block; /* ensure each experience is on its own line */
-  float: none !important;
-  padding: 0 !important;
-  margin-bottom: 1.2em; /* spacing between items */
+.tutoring li {
+  display: block !important;   /* ensure block layout */
+  float: none !important;      /* override navbar float */
+  padding: 0 !important;       /* remove extra padding */
+  margin-bottom: 1.2em;        /* space between entries */
   line-height: 1.6;
   text-align: left;
 }
 
-.tutoring ul {
-  list-style: none;
-  padding: 0;
+/* Section headings */
+h2 {
+  display: block;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+/* Clear floats if any exist in higher layout containers */
+.section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
