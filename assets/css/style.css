@@ -867,5 +867,5 @@ ol.research-interests li {
   display: list-item !important;  /* ensure numbers render */
   float: none !important;         /* override global float */
   margin-bottom: 0.1em;           /* spacing between items */
-  line-height: 0.9;
+  line-height: 1.0;
 }
