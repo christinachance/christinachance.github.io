@@ -855,16 +855,17 @@ h2 {
 
 /* Force numbers for research interests list, override global ol rules */
 ol.research-interests {
-  list-style: decimal outside;   /* numbers outside the text block */
-  padding-left: 1em;             /* space for numbers */
-  margin: 0 1.5em;               /* small left and right margin to constrain width */
-  text-align: left;              /* left-align text relative to number */
-  max-width: 700px;              /* optional: keep list from becoming too wide on large screens */
+  list-style: decimal;          /* use numbers */
+  list-style-position: inside;  /* place numbers inside padding box, so they sit close to text */
+  padding-left: 0;              /* remove default OL padding */
+  margin: 0 auto;               /* center the whole list */
+  max-width: 600px;             /* limit width to avoid spreading too much */
+  text-align: left;             /* left-align text relative to number */
 }
 
 ol.research-interests li {
-  display: list-item !important;
-  float: none !important;        /* override global float rules */
-  margin: 0.3em 0;               /* vertical spacing between items */
-  line-height: 1.4;              /* line spacing for readability */
+  display: list-item !important;  /* force normal list item behavior */
+  float: none !important;         /* override global floats */
+  margin: 0.2em 0;                /* reduce vertical spacing */
+  line-height: 1.4;               /* tighter line spacing */
 }
