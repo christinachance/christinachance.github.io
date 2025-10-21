@@ -855,17 +855,16 @@ h2 {
 
 /* Force numbers for research interests list, override global ol rules */
 ol.research-interests {
-  list-style: decimal;       /* use numbers */
-  /* padding-left: 1.0em;       /* spacing between number and text */
-  padding-left: 0;    
+  list-style: decimal inside; /* numbers appear close to text */
+  padding-left: 0;            /* remove extra padding from ol */
   margin-left: auto;
-  margin-right: auto;         /* center the list block horizontally */
-  text-align: center;           /* left-align text relative to numbers */
+  margin-right: auto;          /* center the whole list */
+  text-align: left;           /* left-align text relative to numbers */
 }
 
 ol.research-interests li {
-  display: list-item !important;  /* ensure numbers render */
-  float: none !important;         /* override global float */
-  margin-bottom: 0.1em;           /* spacing between items */
-  line-height: 1.0;
+  display: list-item !important;
+  float: none !important;     /* override any global float rules */
+  margin: 0.3em 0;            /* reduce space between items */
+  line-height: 1.4;           /* tighter line spacing */
 }
