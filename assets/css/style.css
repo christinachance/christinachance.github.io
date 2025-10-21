@@ -843,7 +843,11 @@ h2 {
 }
 
 
-.paper {
-  margin-left: 2em;
+.paper,
+.training-program {
+  margin: 0;
+  padding: 0 0 0 2em; /* left indent */
+  text-indent: -1em;  /* hanging indent */
   line-height: 1.6;
+  display: block;
 }
