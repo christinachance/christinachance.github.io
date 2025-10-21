@@ -818,7 +818,7 @@ p span {
 /* Force list items to be normal list items (not inline/floated) */
 .ta-experience li,
 .tutoring ul li {
-  display: list-item !important;
+  display: block !important;
   float: none !important;
   clear: none !important;
   margin-bottom: 0.9em;
@@ -852,7 +852,7 @@ h2 {
 .ta-experience li,
 .tutoring li,
 .teaching-assistantship li {
-  display: list-item !important;
+  display: block !important;
   float: none !important;
   padding: 0 !important;
   margin-bottom: 1em;
@@ -860,4 +860,24 @@ h2 {
   text-align: left;
 }
 
+
+.ta-experience {
+  list-style: none; /* removes bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.ta-experience li {
+  display: block; /* ensure each experience is on its own line */
+  float: none !important;
+  padding: 0 !important;
+  margin-bottom: 1.2em; /* spacing between items */
+  line-height: 1.6;
+  text-align: left;
+}
+
+.tutoring ul {
+  list-style: none;
+  padding: 0;
+}
 
