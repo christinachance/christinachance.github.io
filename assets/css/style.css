@@ -857,7 +857,8 @@ h2 {
 ol.research-interests {
   list-style: decimal;          /* use numbers */
   list-style-position: inside;  /* place numbers inside padding box, so they sit close to text */
-  padding-left: 0;              /* remove default OL padding */
+  padding-left: 1em;              /* remove default OL padding */
+  padding-right: 1em;              /* remove default OL padding */
   margin: 0 auto;               /* center the whole list */
   max-width: 600px;             /* limit width to avoid spreading too much */
   text-align: left;             /* left-align text relative to number */
@@ -866,6 +867,6 @@ ol.research-interests {
 ol.research-interests li {
   display: list-item !important;  /* force normal list item behavior */
   float: none !important;         /* override global floats */
-  margin: 0.2em 0;                /* reduce vertical spacing */
-  line-height: 1.4;               /* tighter line spacing */
+  margin: 0.1em 0;              /* very tight vertical spacing */
+  line-height: 1.3;              /* slightly tighter line spacing */
 }
