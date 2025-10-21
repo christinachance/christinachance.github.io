@@ -842,3 +842,8 @@ h2 {
   clear: both;
 }
 
+
+.paper {
+  margin-left: 2em;
+  line-height: 1.6;
+}
