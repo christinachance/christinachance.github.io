@@ -865,6 +865,6 @@ ol.research-interests {
 ol.research-interests li {
   display: list-item !important;  /* ensure numbers render */
   float: none !important;         /* override global float */
-  margin-bottom: 0.8em;           /* spacing between items */
+  margin-bottom: 0.4em;           /* spacing between items */
   line-height: 1.6;
 }
