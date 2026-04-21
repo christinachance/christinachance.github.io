@@ -870,3 +870,13 @@ ol.research-interests li {
   margin: 0.1em 0;              /* very tight vertical spacing */
   line-height: 1.3;              /* slightly tighter line spacing */
 }
+
+
+h3.research-theme {
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
