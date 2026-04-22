@@ -164,6 +164,7 @@ footer a:hover { text-decoration: underline; }
 main.hero {
   display: grid;
   grid-template-columns: 320px 1fr;
+  align-items: stretch;
   min-height: calc(100vh - 60px);
   max-width: 1200px;
   margin: 0 auto;
@@ -179,7 +180,6 @@ main.hero {
   align-items: center;
   padding: 52px 32px 48px;
   position: relative;
-  min-height: calc(100vh - 60px);
 }
 
 
@@ -605,6 +605,9 @@ main.hero {
     border-bottom: 1px solid var(--blush);
     padding: 40px 24px 36px;
   }
+  .hero-left {
+     min-height: unset;
+   }
   .hero-left::before { display: none; }
 
   .headshot-ring { width: 150px; height: 150px; }
