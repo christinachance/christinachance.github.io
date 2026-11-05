@@ -249,6 +249,9 @@ h3 {
   color: var(--accent);
 }
 .pub-title:hover { text-decoration: underline; }
+span.pub-title { color: var(--text); }
+span.pub-title:hover { text-decoration: none; }
+.pub-list span.pub-title { display: inline; }
 
 .pub-venue {
   font-style: italic;
