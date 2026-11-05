@@ -257,9 +257,18 @@ h3 {
 
 .pub-links a {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  margin: 2px 14px 0 0;
+  line-height: 1.5;
+  padding: 1px 10px;
+  margin: 6px 6px 0 0;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+.pub-links a:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ---------- Teaching ---------- */
