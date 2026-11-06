@@ -53,7 +53,7 @@ a:hover { text-decoration: underline; }
 }
 
 .nav-brand {
-  color: var(--text);
+  color: var(--accent);
   font-family: var(--serif);
   font-weight: 400;
   font-size: 1.15rem;
