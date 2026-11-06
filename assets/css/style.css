@@ -320,6 +320,15 @@ span.pub-title:hover { text-decoration: none; }
   margin-left: 4px;
 }
 
+.intro h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin: 0 0 6px;
+  color: var(--accent);
+}
+
 .pub-list .tag { display: inline-block; }
 
 .tag-review {
