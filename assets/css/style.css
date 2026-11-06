@@ -1,8 +1,8 @@
 /* ---------- Base ---------- */
 /* To change the accent color, edit --accent and --accent-light only */
 :root {
-  --accent: #800020;
-  --accent-light: #f8eef0;
+  --accent: #5b3f8c;
+  --accent-light: #f2eef8;
   --serif: 'DM Serif Display', Georgia, serif;
   --text: #1f1f1f;
   --muted: #5f6368;
@@ -122,6 +122,7 @@ a:hover { text-decoration: underline; }
   font-size: 2.4rem;
   line-height: 1.15;
   margin: 0 0 6px;
+  color: var(--accent);
 }
 
 .intro-title {
@@ -318,15 +319,6 @@ span.pub-title:hover { text-decoration: none; }
   border-radius: 10px;
   vertical-align: 2px;
   margin-left: 4px;
-}
-
-.intro h1 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 1.15;
-  margin: 0 0 6px;
-  color: var(--accent);
 }
 
 .pub-list .tag { display: inline-block; }
