@@ -1,8 +1,8 @@
 /* ---------- Base ---------- */
 /* To change the accent color, edit --accent and --accent-light only */
 :root {
-  --accent: #5b3f8c;
-  --accent-light: #f2eef8;
+  --accent: #800020;
+  --accent-light: #f8eef0;
   --serif: 'DM Serif Display', Georgia, serif;
   --text: #1f1f1f;
   --muted: #5f6368;
